@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Budget App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Budget App</h1>
+        <div class="balance">
+            <p>Balance: $<span id="balance">0.00</span></p>
+        </div>
+        <div class="transaction-form">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount">
+            <label for="type">Type:</label>
+            <select id="type">
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+            <button onclick="addTransaction()">Add Transaction</button>
+        </div>
+        <div class="transaction-history">
+            <h2>Transaction History</h2>
+            <ul id="transactionList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
